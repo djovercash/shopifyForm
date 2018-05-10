@@ -14,7 +14,6 @@ const App = (function() {
         option.setAttribute("id", i)
         dropdown.append(option)
       }
-      console.log(opts);
     }
   }
 })();
