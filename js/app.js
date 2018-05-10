@@ -24,23 +24,21 @@ const App = (function() {
 
     static checkStatus() {
       let email = document.getElementById('userEmail').value
-      let departmentList = document.getElementById('dropdown')
-      let department = departmentList.options[departmentList.selectedIndex].value
-      if (email.includes('@') && email.includes('.com')) {
-        console.log("email: ", email)
-        console.log("department: ", department)
-        App.submitEmail(email, department)
-      } else {
-        App.errorMessage()
-      }
+      if (typeof email === "string") {
+        let departmentList = document.getElementById('dropdown')
+        let department = departmentList.options[departmentList.selectedIndex].value
+        if (email.includes('@') && email.includes('.com') && typeof email === "string") {
+          console.log("email: ", email)
+          console.log("department: ", department)
+          App.submitEmail(email, department)
+        } else {
+          App.errorMessage()
+        }
+      } 
     }
 
     static callTimeout() {
       setTimeout(function() {App.sayHello()}, 5000)
-    }
-
-    static sayHello() {
-      console.log("Hello")
     }
 
     static submitEmail(email, department) {
@@ -65,5 +63,6 @@ const App = (function() {
       let errorMessage = document.getElementById('error')
       errorMessage.style.visibility = 'hidden'
     }
+
   }
 })();
