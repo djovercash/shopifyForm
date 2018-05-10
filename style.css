@@ -1,6 +1,95 @@
 body {
+  display: block;
+  justify-content: center;
+  padding-left: 20vw;
+  padding-right: 20vw;
   font-family: "Helvetica";
   background-color: #000639;
   color: #FFFFFF;
-  text-align: center;
+}
+
+.light_class {
+  font-weight: 300;
+}
+
+header {
+  text-align: left;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+#greenLine {
+  color: #7AB55C;
+}
+
+#emailForm {
+  display: block;
+  justify-content: center;
+  font-size: 16px;
+  width: 100%;
+}
+
+#emailFields {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#userEmail {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 10px;
+  font-size: 16px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+#dropdown {
+  font-size: 16px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+#nonOption {
+  color: #7B7B7B !important;
+}
+
+.black_class {
+  color: #000000;
+}
+
+#error {
+  visibility: hidden;
+  color: #C23628;
+}
+
+#emailSubmit {
+  color: #FFFFFF;
+  background-color: #5c6ac4;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border: 0px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #emailFields {
+    display: block;
+  }
+
+  #userEmail {
+    width: 95%;
+    margin-bottom: 2vw;
+  }
+
+  #dropdown {
+    width: 100%;
+    height: 8vh;
+  }
 }

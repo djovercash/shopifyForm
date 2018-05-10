@@ -6,8 +6,28 @@
     <link rel="stylesheet" href="style.css"  type="text/css" />
   </head>
   <body>
-    <h1>Stay up to date with ecommerce trends and Shopify's newsletter</h1>
+    <header>
+      <h1>Stay up to date with ecommerce trends with Shopify's newsletter</h1>
+      <div id="greenLine">______</div>
+    </header>
+    <div id="subscribeContainer">
+      <h3 class="light_class">Subscribe for free marketing tips</h3>
+      <form id="emailForm">
+        <div id="emailFields">
+          <input id="userEmail" type="text" name="userEmail" placeholder="Email Address">
+          <select id="dropdown" name="dropdownOptions">
+            <option id="nonOption" class="grey_class" disabled selected>Interested In...</option>
+          </select>
+        </div>
+        <label id="error" class="light_class">Please enter a valid email address</label>
+        <input id="emailSubmit" type="submit" name="Submit" value="Sign up now" />
+      </form>
+    </div>
+    <div id="postSuccessEmail">
 
+    </div>
 
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
